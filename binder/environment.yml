@@ -1,5 +1,6 @@
-name: meg_m2_rnaseq_bash_2024
-# 2024_test for an updated environment for the novel RNAseq pipeline on mouse data (adapted from the CEA RNAseq course)
+name: meg_m1-ue5-unix2
+# 2025 - UE A2B - partie I du pipeline RNAseq
+# depuis template repo RNAseq_Plasma 
 # channels priority
 # see https://bioconda.github.io/
 # conda-forge has highest priority
@@ -24,17 +25,15 @@ dependencies:
   - pip
   - pip:
     - bash_kernel
-   # For the M2 course:
+   # For the M1 A2B course:
   - fastqc=0.12.1
   - multiqc=1.13
   - fastp=0.23.1
-  - fastq-screen=0.15.3
   - star=2.7.11a
   - samtools=1.18
   - bc=1.07.1
   - qualimap=2.2.2b
   - subread=2.0.6
-  - salmon=1.10.2
   #- pip:
   #  - jupyter
   #  - notebook
